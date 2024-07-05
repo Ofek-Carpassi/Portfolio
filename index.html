@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hotbar">
+        <button class="tab" id="homeTab" onclick="openTab('home')">Home</button>
+        <button class="tab" id="aboutTab" onclick="openTab('about')">About Me</button>
+        <button class="tab" id="learnedTab" onclick="openTab('learned')">Skills</button>
+        <button class="tab" id="socialsTab" onclick="openTab('socials')">Connect</button>
+    </div>
+
+    <div id="home" class="content">
+        <h1>Ofek Carpassi</h1>
+        <p>Greetings! I'm Ofek Carpassi, a passionate young coder from Jerusalem, Israel. Since 2020, I've been on an exciting journey in the world of programming and cybersecurity.</p>
+        <p>Currently pursuing a bachelor's degree in computer science at the Open University of Israel while attending High School Ziv, I'm also deeply engaged in the "Magshimim Cyber" program.</p>
+        <p>My interests span from coding and cybersecurity to martial arts and Formula 1 racing. I'm always eager to learn, grow, and contribute to the ever-evolving landscape of technology.</p>
+        <p><em>"Whatever it takes." - McLaren F1 team</em></p>
+        <p><em>"If death is assured, why not chase after your dreams?"</em></p>
+    </div>
+    <div id="about" class="content">
+        <h1>About Me</h1>
+        <p>Born on December 30th, 2008, in the vibrant city of Jerusalem, Israel, I'm a high school student with a passion for technology and personal growth.</p>
+        <h2>Education</h2>
+        <ul>
+            <li>Open University of Israel: Pursuing a Bachelor's degree in Computer Science</li>
+            <li>Magshimim Cyber Program, IDF: A national cyber education program</li>
+            <li>High School Ziv, Jerusalem: Where my academic journey began and continues to thrive</li>
+        </ul>
+        <h2>Interests</h2>
+        <p>I'm fascinated by math, physics, chemistry, computers, and history. My coding journey began in 2020, and it has been an exhilarating ride ever since.</p>
+        <h2>Hobbies</h2>
+        <ul>
+            <li>Martial Arts: Started training in "Krav Maga" and MMA in September 2021</li>
+            <li>Formula 1: An avid fan of F1 racing</li>
+            <li>TV Series: Enjoy watching "Friends"</li>
+            <li>Fitness: Regular gym-goer</li>
+        </ul>
+    </div>
+    <div id="learned" class="content">
+        <h1>My Skills and Learning Journey</h1>
+    <div class="skills-tabs">
+        <button class="skill-tab" onclick="openSkillTab('learningJourney')">Learning Journey</button>
+        <button class="skill-tab active" onclick="openSkillTab('languages')">Languages</button>
+        <button class="skill-tab" onclick="openSkillTab('courses')">Courses</button>
+        <button class="skill-tab" onclick="openSkillTab('projects')">Projects</button>
+    </div>
+    <div id="learningJourney" class="skill-content">
+        <h2>Learning Journey</h2>
+        <div class="timeline">
+            <div class="event">
+                <h3>Late 2020: The Spark</h3>
+                <p>Inspired by Minecraft's redstone and command blocks, I took my first steps into coding with Java.</p>
+            </div>
+            <div class="event">
+                <h3>2021: Academic Turnaround</h3>
+                <p>Despite initial struggles with online learning during the pandemic, I rapidly improved my grades and became a top student in my class.</p>
+            </div>
+            <div class="event">
+                <h3>8th grade: 2021-2022: Atuda Madait Program</h3>
+                <p>Joined an advanced program in middle school, focusing on math, physics, science, and computer science. Excelled in Python, exploring advanced topics like Tkinter, Pygame, Flask, and Django.</p>
+            </div>
+            <div class="event">
+                <h3>Summer 2022: Web Development & Java</h3>
+                <p>Dived deeper into Java and web development, learning HTML, CSS, and JavaScript.</p>
+            </div>
+            <div class="event">
+                <h3>9th Grade: Bachelor's Degree Journey Begins</h3>
+                <p>Started my degree, learning Introduction to Mathematics in the first semester, Introduction to Computer Science in Java in the second semester, and Discrete Mathematics in the summer semester while getting into the Magshimim program.</p>
+            </div>
+            <div class="event">
+                <h3>10th Grade: Magshimim & Advanced University Courses</h3>
+                <p>Started the Magshimim program, taking "Laboratory in Systems Programming in C" in the first semester and "Infinitismal Calculus 1" plus "Logics for computer science" in the second semester.</p>
+                <p>Managed multiple university courses (Infinitesimal Calculus 1, Logics for Computer Science) alongside the Magshimim program. Developed strong time management and study skills.</p>
+            <div class="event">
+                <h3>Summer 2024: Linear Algebra</h3>
+                <p>Continued university studies with Linear Algebra 1 during the summer semester.</p>
+            </div>
+        </div>
+    </div>    
+    <div id="languages" class="skill-content active">
+        <h2>Programming Languages</h2>
+        <ul>
+            <li>Python</li>
+            <li>Java</li>
+            <li>HTML, CSS, JavaScript</li>
+            <li>C</li>
+            <li>C#</li>
+        </ul>
+    </div>
+    <div id="courses" class="skill-content">
+        <h2>Courses Completed</h2>
+        <ul>
+            <li>Introduction to Mathematics</li>
+            <li>Introduction to Computer Science in Java</li>
+            <li>Discrete Mathematics</li>
+            <li>Laboratory in Systems Programming in C - Final grade: 93</li>
+            <li>Infinitismal Calculus 1</li>
+            <li>Logics for Computer Science</li>
+            <li>Magshimim Cyber Program - Networks</li>
+            <li>Magshimim Cyber Program - C Programming</li>
+        </ul>
+    </div>
+    <div id="projects" class="skill-content">
+        <h2>Notable Projects</h2>
+        <ul class="projects-list">
+            <li>
+                <h3>Assembler</h3>
+                <p>A comprehensive assembler for a specific assembly language, written in C. Final grade: 94</p>
+                <p><strong>Skills:</strong> Project Planning, C (Programming Language), Project Engineering, Leadership, Communication</p>
+                <a href="https://github.com/Ofek-Carpassi/Assembler" target="_blank">GitHub Repository</a>
+            </li>
+            <li>
+                <h3>Chess Game Website</h3>
+                <p>A JavaScript-based chess game website (in development)</p>
+                <p><strong>Skills:</strong> JavaScript, HTML, CSS, Game Development</p>
+                <a href="https://github.com/Ofek-Carpassi/ChessJS" target="_blank">GitHub Repository</a>
+            </li>
+            <li>
+                <h3>Pinkfloyd-Protocol</h3>
+                <p>Networking project from Magshimim. A simple server-client with a unique protocol. Final grade: 100</p>
+                <p><strong>Skills:</strong> Networking, Project Planning, Python (Programming Language)</p>
+                <a href="https://github.com/Ofek-Carpassi/PinkFloyd_Protocol_Server" target="_blank">GitHub Repository</a>
+            </li>
+            <li>
+                <h3>Antivirus</h3>
+                <p>An antivirus project for the "Magshimim-cyber" program of the IDF. Final grade: 90</p>
+                <p><strong>Skills:</strong> C (Programming Language), Project Management, Project Planning</p>
+                <a href="https://github.com/Ofek-Carpassi/AntiVirus" target="_blank">GitHub Repository</a>
+            </li>
+            <li>
+                <h3>Bulls and Cows</h3>
+                <p>A "Bulls and Cows" number guessing game for the "Magshimim Cyber" Program. Final grade: 100</p>
+                <p><strong>Skills:</strong> Project Planning, C (Programming Language)</p>
+                <a href="https://github.com/Ofek-Carpassi/BullsAndCows" target="_blank">GitHub Repository</a>
+            </li>
+        </ul>   
+    </div>
+    </div>
+    <div id="socials" class="content">
+        <h1>Let's Connect</h1>
+        <p>I'm enthusiastic about forging meaningful connections, exploring new opportunities, and contributing to the ever-evolving landscape of technology.</p>
+        <h2>How to Reach Me</h2>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank">LinkedIn</a></li>
+            <li><a href="https://github.com/your-github-profile" target="_blank">GitHub</a></li>
+            <!-- Add other social media or contact information as needed -->
+        </ul>
+        <p>If you have any questions or would like to discuss potential opportunities, don't hesitate to get in touch. I'm always open to connecting with like-minded individuals. Looking forward to connecting with you!</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
